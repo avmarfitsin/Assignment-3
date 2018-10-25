@@ -1,0 +1,1 @@
+The Assignment 3 folder contains packages for each of Problem 1 and Problem 2. Within package Prob1 is DaryHeap.java, which contains all the methods for Problem 1, and Problem 1.pdf which explains the complexity of the methods within the class. Problem 2 similarly has BST.java containing all the methods, and Problem 2.pdf which explains the complexity of these methods.
