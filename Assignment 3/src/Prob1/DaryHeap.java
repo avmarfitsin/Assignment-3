@@ -111,7 +111,7 @@ public class DaryHeap
             recursort(upt, deli1); 
         } 
     } 
-    public void daryHeapsort() 
+    public int[] daryHeapsort() 
     { 
     	int i=heapdimen/2-1;
         while (i>=0) 
@@ -129,10 +129,17 @@ public class DaryHeap
             recursort(i, 0); 
             i--;
         } 
+    	int[]a=new int[heapdimen];
+    	for(int j=0;j<heapdimen;j++)
+    	{
+    		a[j]=hepe[j];
+    	}
+        return a;
     }
     public static void main(String[] args)
     {
     	DaryHeap p1=new DaryHeap(3);
+    	int[]a;
     	p1.insert(1);
     	p1.insert(2);
     	p1.insert(3);
@@ -142,7 +149,10 @@ public class DaryHeap
     	p1.insert(20);
     	p1.insert(18);
     	System.out.println("max="+p1.delMax());
-    	p1.daryHeapsort();
+    	a=p1.daryHeapsort();
+    	for(int i=0;i<a.length;i++) {
+    		System.out.println(a[i]);
+    	}
     	p1.printHeap();
     	
     }
